@@ -11,13 +11,6 @@ AWorldBase::AWorldBase()
 
 }
 
-void AWorldBase::GenerateIslands()
-{
-	FActorSpawnParameters spawnParms;
-	spawnParms.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
-	GetWorld()->SpawnActor<AActor>(islandBP, GetActorTransform(), spawnParms);
-}
-
 // Called when the game starts or when spawned
 void AWorldBase::BeginPlay()
 {

@@ -15,12 +15,6 @@ public:
 	// Sets default values for this actor's properties
 	AWorldBase();
 
-	UFUNCTION(BlueprintCallable, Category = "Setup")
-	void GenerateIslands();
-
-	UPROPERTY(EditAnywhere)
-	TSubclassOf<AActor> islandBP;
-
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
